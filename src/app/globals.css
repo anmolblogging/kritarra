@@ -383,22 +383,21 @@ p{letter-spacing:.008em}
  .statement-editorial p.statement-note{grid-column:1;max-width:310px;margin:0;padding:0;border:0}
 }
 
-/* The craft story is a photographic composition with light type over its shade. */
-.craft-story.craft-editorial{position:relative;isolation:isolate;display:block;height:auto;min-height:0;margin:35px 0 65px;padding:0;background:#1c1714;color:var(--ivory);overflow:hidden}
-.craft-story.craft-editorial::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#1c1714 0%,rgba(28,23,20,.98) 23%,rgba(28,23,20,.8) 36%,rgba(28,23,20,.12) 55%,transparent 75%);pointer-events:none}
-.craft-editorial .craft-copy{position:relative;z-index:2;width:58%;max-width:720px;min-height:clamp(460px,38vw,550px);padding:46px 5vw 42px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
-.craft-editorial .craft-copy .eyebrow{color:#f8f6f1c9;margin-bottom:26px}
-.craft-editorial .craft-copy h2{font-size:clamp(60px,6.2vw,94px);line-height:1.02;letter-spacing:-.035em}
-.craft-title-tail{display:block;font-size:.87em}
-.craft-editorial .craft-copy h2 em{color:#d4c2a7;white-space:nowrap}
-.craft-editorial .craft-copy p{max-width:300px;margin:24px 0 13px;color:#f8f6f1d9}
-.craft-editorial .craft-visual{position:absolute;inset:0 0 0 22%;height:100%;width:78%;min-height:0;z-index:0;overflow:hidden}
-.craft-photograph{position:absolute;inset:-22px 0;height:calc(100% + 44px)}
-.craft-editorial .asset{height:100%;min-height:0;background:transparent}
-.craft-editorial .asset img{transform:none;transition:none}
-.craft-editorial .craft-copy .text-link{color:var(--ivory)}
-@media(min-width:768px) and (max-width:1099px){.craft-editorial .craft-copy{width:62%;min-height:470px;padding:38px 4vw}.craft-editorial .craft-copy h2{font-size:clamp(55px,6.2vw,68px)}.craft-editorial .craft-visual{left:18%;width:82%}}
-@media(max-width:767px){.craft-story.craft-editorial{margin:25px 0 50px}.craft-story.craft-editorial::after{background:linear-gradient(180deg,rgba(17,14,12,.04) 15%,rgba(17,14,12,.12) 31%,rgba(17,14,12,.84) 59%,#110e0c 100%)}.craft-editorial .craft-copy{width:100%;max-width:none;min-height:590px;padding:285px 24px 30px;justify-content:flex-end}.craft-editorial .craft-copy .eyebrow{margin-bottom:18px}.craft-editorial .craft-copy h2{font-size:clamp(46px,12vw,66px)}.craft-editorial .craft-copy p{max-width:300px;margin:18px 0 10px}.craft-editorial .craft-visual{inset:0;width:100%;height:100%}.craft-editorial .craft-visual .asset img{object-position:52% 18%!important}}
+/* A monochrome campaign portrait with a translucent editorial card. */
+.craft-story.craft-editorial{position:relative;isolation:isolate;display:flex;align-items:flex-end;height:clamp(520px,54vw,780px);min-height:0;margin:35px 0 65px;padding:28px;background:#424242;color:#fff;overflow:hidden}
+.craft-editorial .craft-visual{position:absolute;inset:0;height:100%;width:100%;min-height:0;z-index:0;overflow:hidden}
+.craft-editorial .craft-photograph{position:absolute;inset:-22px 0;height:calc(100% + 44px)}
+.craft-editorial .craft-visual .asset{height:100%;min-height:0;background:transparent}
+.craft-editorial .craft-visual .asset img{filter:grayscale(1);transform:none;transition:none}
+.craft-editorial .craft-copy{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:42px;width:35%;max-width:470px;min-height:310px;padding:28px 30px;background:rgba(72,72,72,.54);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.craft-editorial .craft-copy h2{font-size:clamp(34px,3.5vw,52px);line-height:1.08;letter-spacing:-.025em;white-space:nowrap}
+.craft-editorial .craft-copy h2 em{color:inherit;font-style:italic}
+.craft-editorial .craft-copy p{max-width:34ch;margin:0;color:#fff;font-size:12px;line-height:1.7;text-wrap:pretty}
+.craft-editorial .craft-copy p+p{margin-top:16px}
+.craft-editorial .craft-copy .text-link{min-height:44px;margin-top:12px;padding:10px 0 6px;color:#fff;border-color:rgba(255,255,255,.65);font-size:10px;letter-spacing:1.1px;gap:24px}
+.craft-editorial .craft-copy .text-link:hover{gap:32px}
+@media(min-width:768px) and (max-width:1099px){.craft-story.craft-editorial{padding:22px}.craft-editorial .craft-copy{width:42%;padding:24px;gap:32px}.craft-editorial .craft-copy h2{font-size:36px}}
+@media(max-width:767px){.craft-story.craft-editorial{height:660px;height:clamp(580px,85svh,720px);margin:25px 0 50px;padding:18px}.craft-editorial .craft-copy{width:min(100%,340px);min-height:0;max-width:none;padding:24px;gap:30px}.craft-editorial .craft-copy h2{font-size:clamp(32px,8.5vw,40px)}.craft-editorial .craft-copy p{font-size:12px;line-height:1.65}.craft-editorial .craft-visual .asset img{object-position:54% 25%!important}}
 @media(prefers-reduced-motion:reduce){.motion-line-content,.statement-second,.craft-photograph,.craft-description,.statement-note{transform:none!important}.craft-description,.statement-note{opacity:1!important}.craft-editorial .craft-visual{clip-path:none!important}}
 
 /* Compact vertical rhythm across the homepage's editorial sections. */

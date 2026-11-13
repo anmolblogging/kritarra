@@ -1,0 +1,106 @@
+.collection-editorial {
+  padding: clamp(60px, 8vw, 120px) var(--gutter);
+  background: #fff;
+  color: #292925;
+}
+
+.collection-editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 26px 20px;
+  max-width: 1440px;
+  margin-inline: auto;
+  align-items: start;
+}
+
+.collection-editorial-heading {
+  grid-column: 2 / 5;
+  margin: 0 0 10px;
+  font-size: clamp(28px, 3.05vw, 46px);
+  line-height: 1.04;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+  text-align: justify;
+  text-wrap: pretty;
+}
+
+.collection-editorial-note,
+.collection-editorial-note p {
+  max-width: 24ch;
+  color: #595953;
+  font-size: 11px;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
+.collection-editorial-intro { grid-area: 2 / 1; }
+.collection-editorial-lead { grid-area: 2 / 2 / 3 / 4; }
+.collection-editorial-ring { grid-area: 2 / 4; align-self: end; }
+.collection-editorial-drop { grid-area: 3 / 1; }
+.collection-editorial-aside { grid-area: 3 / 4; align-self: end; padding-bottom: 12px; }
+.collection-editorial-necklace { grid-area: 4 / 1; }
+.collection-editorial-stone { grid-area: 4 / 2; }
+.collection-editorial-statement { grid-area: 4 / 3 / 6 / 5; }
+.collection-editorial-portrait { grid-area: 6 / 1 / 8 / 3; margin-top: 30px; }
+.collection-editorial-botanical { grid-area: 6 / 4; margin-top: 30px; }
+.collection-editorial-finale { grid-area: 7 / 3; align-self: end; }
+
+.collection-editorial-image { display: block; min-width: 0; }
+.collection-editorial-image figure { margin: 0; }
+.collection-editorial-image .asset { height: auto; min-height: 0; aspect-ratio: 4 / 5; background: #eeefeb; }
+.collection-editorial-image .asset img { filter: saturate(.65); transition: transform 900ms cubic-bezier(.22, 1, .36, 1); }
+.collection-editorial-image.is-monochrome .asset img { filter: grayscale(1); }
+.collection-editorial-image:hover .asset img { transform: scale(1.025); }
+.collection-editorial-image figcaption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 9px;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+.collection-editorial-image figcaption span { font-size: 12px; }
+.collection-editorial-aside > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-top: 14px;
+  border-bottom: 1px solid #c7c7be;
+  color: #292925;
+  font-size: 10px;
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .collection-editorial-grid { gap: 24px 14px; }
+  .collection-editorial-heading { font-size: clamp(25px, 3.8vw, 34px); }
+  .collection-editorial-note, .collection-editorial-note p { font-size: 10px; }
+  .collection-editorial-image figcaption { font-size: 8px; }
+}
+
+@media (max-width: 600px) {
+  .collection-editorial { padding: 50px 22px 60px; }
+  .collection-editorial-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 14px; }
+  .collection-editorial-heading { grid-area: 1 / 1 / 2 / 3; font-size: clamp(25px, 6.7vw, 36px); margin-bottom: 0; text-align: left; }
+  .collection-editorial-intro { grid-area: 2 / 1 / 3 / 3; max-width: 38ch; }
+  .collection-editorial-lead { grid-area: 3 / 1 / 4 / 3; margin-left: 12%; }
+  .collection-editorial-ring { grid-area: 4 / 2; }
+  .collection-editorial-drop { grid-area: 4 / 1; margin-top: 52px; }
+  .collection-editorial-aside { grid-area: 5 / 1 / 6 / 3; justify-self: end; max-width: 30ch; padding-block: 12px; }
+  .collection-editorial-necklace { grid-area: 6 / 1; }
+  .collection-editorial-stone { grid-area: 6 / 2; margin-top: 38px; }
+  .collection-editorial-statement { grid-area: 7 / 1 / 8 / 3; margin-left: 12%; }
+  .collection-editorial-portrait { grid-area: 8 / 1 / 9 / 3; margin: 12px 12% 0 0; }
+  .collection-editorial-botanical { grid-area: 9 / 2; margin: 0; }
+  .collection-editorial-finale { grid-area: 9 / 1; margin-top: 52px; }
+  .collection-editorial-image figcaption { font-size: 8px; gap: 4px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collection-editorial-image .asset img { transition: none; }
+  .collection-editorial-image:hover .asset img { transform: none; }
+}

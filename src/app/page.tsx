@@ -10,6 +10,7 @@ import { CraftJourney } from "@/components/craft-journey";
 import { BrandIntro } from "@/components/brand-intro";
 import { BrandStatement } from "@/components/brand-statement";
 import { CraftStory } from "@/components/craft-story";
+import { CollectionEditorial } from "@/components/collection-editorial";
 import { KritarraEditorialSlider } from "@/components/KritarraEditorialSlider";
 import { signatureEditorialSlides } from "@/lib/signature-editorial";
 import { socialCampaigns } from "@/lib/imagery";
@@ -24,8 +25,9 @@ export default function Home() {
       <Perspective />
       <CuratedSelection />
       <CraftStory />
-      <VisualJournal />
-      <Remembered />
+      <CollectionEditorial />
+      {/* <VisualJournal /> */}
+      {/* <Remembered /> */}
       <CraftJourney />
       <section className="social-section section">
         <Reveal className="section-heading">
