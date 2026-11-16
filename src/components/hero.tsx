@@ -6,8 +6,8 @@ import { campaign } from '@/lib/imagery';
 
 const photographs = [
   { ...campaign.Dcn9jVgs_Iv, desktop: '50% 8%', mobile: '40% 40%', framing: 'opening' },
-  { ...campaign.DdgV82YseoM, desktop: '50% 30%', mobile: '46% 45%', framing: 'cover' },
-  { ...campaign.DdDpJ8EMryv, desktop: '50% 50%', mobile: '60% 60%', framing: 'cover' },
+  { ...campaign.c2765, desktop: '50% 30%', mobile: '50% 40%', framing: 'cover' },
+  { ...campaign.c2360, desktop: '50% 38%', mobile: '50% 45%', framing: 'cover' },
 ];
 
 export function Hero() {

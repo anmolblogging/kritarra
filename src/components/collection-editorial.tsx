@@ -33,7 +33,7 @@ export function CollectionEditorial() {
           A study in contrasts. Sculptural shapes, delicate details, and a little of the unexpected. Discover the world of Kritarra, one creation at a time.
         </p>
 
-        <EditorialImage placement="collection-editorial-lead" photo={campaign.Deqr_MGvLQ5} caption="The art of adornment" href="/products/earrings/" monochrome />
+        <EditorialImage placement="collection-editorial-lead" photo={campaign.c2351} caption="The art of adornment" href="/products/necklaces/" position="50% 40%" />
         <EditorialImage placement="collection-editorial-ring" photo={campaign['Dc-ogQ-vgSm']} caption="A personal touch · Rings" href="/products/rings/" position="48% 45%" />
         <EditorialImage placement="collection-editorial-drop" photo={campaign.DLM9X0OMU3M} caption="A little drama · Earrings" href="/products/earrings/" position="36% 30%" />
 
@@ -42,10 +42,10 @@ export function CollectionEditorial() {
           <Link href="/collections/">Explore the collection <span aria-hidden="true">↗</span></Link>
         </div>
 
-        <EditorialImage placement="collection-editorial-necklace" photo={campaign.DRE3aGHDKCw} caption="A study in detail · Necklaces" href="/products/necklaces/" monochrome />
+        <EditorialImage placement="collection-editorial-necklace" photo={campaign.c2342} caption="A study in detail · Necklaces" href="/products/necklaces/" position="50% 40%" />
         <EditorialImage placement="collection-editorial-stone" photo={campaign.DOgKA81j9ju} caption="Where it begins" href="/about/" />
-        <EditorialImage placement="collection-editorial-statement" photo={campaign.DLK5DXfNPGi} caption="An expressive gesture · Bracelets" href="/products/bracelets/" monochrome />
-        <EditorialImage placement="collection-editorial-portrait" photo={campaign.DXJI2FVjFC_} caption="The Kritarra perspective" href="/about/" monochrome position="50% 28%" />
+        <EditorialImage placement="collection-editorial-statement" photo={campaign.c2673} caption="An expressive gesture · Bracelets" href="/products/bracelets/" position="50% 45%" />
+        <EditorialImage placement="collection-editorial-portrait" photo={campaign.c2711} caption="The Kritarra perspective" href="/about/" position="50% 30%" />
         <EditorialImage placement="collection-editorial-botanical" photo={campaign.DdqsB01sVOc} caption="Inspired by nature" href="/about/" />
         <EditorialImage placement="collection-editorial-finale" photo={campaign.DQRYf7QDNzm} caption="An accent of individuality" href="/products/earrings/" position="45% 32%" />
       </div>

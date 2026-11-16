@@ -14,8 +14,8 @@ export type CampaignPhoto = {
 export const campaign = photos satisfies Record<string, CampaignPhoto>;
 
 export const socialCampaigns = [
-  campaign.DdqsB01sVOc,
-  campaign.DXEH9ETjDNw,
-  campaign.DQRYf7QDNzm,
-  campaign.DMuceFtvoNP,
+  campaign.c2347,
+  campaign.c2354,
+  campaign.c2358,
+  campaign.c2357,
 ];

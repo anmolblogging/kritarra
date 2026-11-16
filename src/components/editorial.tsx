@@ -38,12 +38,12 @@ export function Perspective() {
         </div>
         <motion.div className="perspective-portrait" style={{ y: reduce ? 0 : portraitY }}>
           <motion.div className="perspective-image-reveal" initial={false} whileInView={reduce ? {} : { clipPath: ['inset(14% 0 0 0)', 'inset(0% 0 0 0)'] }} viewport={{ once: true, amount: .2 }} transition={{ duration: 1.3, ease }}>
-            <Asset photo={campaign.DXJI2FVjFC_} position="50% 26%" sizes="(max-width: 767px) 82vw, 60vw" />
+            <Asset photo={campaign.c2355} position="50% 35%" sizes="(max-width: 767px) 82vw, 60vw" />
           </motion.div>
         </motion.div>
         <motion.div className="perspective-detail" style={{ y: reduce ? 0 : detailY }}>
           <motion.div className="perspective-image-reveal" initial={false} whileInView={reduce ? {} : { clipPath: ['inset(0 100% 0 0)', 'inset(0 0% 0 0)'] }} viewport={{ once: true, amount: .2 }} transition={{ duration: 1.2, delay: .16, ease }}>
-            <Asset photo={campaign.DdgV82YseoM} position="45% 25%" sizes="(max-width: 767px) 44vw, 34vw" />
+            <Asset photo={campaign.c2339} position="50% 45%" sizes="(max-width: 767px) 44vw, 34vw" />
           </motion.div>
         </motion.div>
       </div>
