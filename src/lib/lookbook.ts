@@ -53,10 +53,10 @@ const liaison: LookbookCollection = {
   chapters: Object.values(liaisonChapters),
   spreads: [
     [{ kind: 'cover', image: image('liaison-cover', 'A sculpted gold cuff tied at the wrist with green printed silk') }, { kind: 'title' }],
-    [{ kind: 'statement' }, { kind: 'still', piece: piece('liaison-statement', 'Necklace', 'Openwork gold necklace with three articulated strands') }],
+    [{ kind: 'statement' }, { kind: 'photo', image: image('liaison-scarves', 'The printed silk scarves that Liaison pieces are styled with') }],
     [
       { kind: 'photo', chapter: liaisonChapters.necklaces, image: image('liaison-necklaces', 'A sculpted gold necklace threaded through printed silk at the neck') },
-      { kind: 'still', piece: piece('liaison-wave-collar', 'Necklace', 'Undulating gold collar edged with diamonds') },
+      { kind: 'still', piece: piece('liaison-statement', 'Necklace', 'Openwork gold necklace with three articulated strands') },
     ],
     [
       { kind: 'pair', pieces: [piece('liaison-oval-link-collar', 'Necklace', 'Gold collar of openwork oval links'), piece('liaison-floral-link-collar', 'Necklace', 'Gold collar of diamond-set floral links')] },
@@ -67,8 +67,8 @@ const liaison: LookbookCollection = {
       { kind: 'photo', image: image('liaison-choker-red', 'A diamond-set gold choker worn with red silk'), position: '50% 35%' },
     ],
     [
-      { kind: 'still', piece: piece('liaison-lace-piece', 'Necklace', 'Lace-like openwork gold piece set with diamonds') },
-      { kind: 'still', piece: piece('liaison-ladder-collar', 'Necklace', 'Articulated gold ladder collar') },
+      { kind: 'pair', pieces: [piece('liaison-lace-piece', 'Necklace', 'Lace-like openwork gold piece set with diamonds'), piece('liaison-ladder-collar', 'Necklace', 'Articulated gold ladder collar')] },
+      { kind: 'still', piece: piece('liaison-wave-collar', 'Necklace', 'Undulating gold collar edged with diamonds') },
     ],
     [
       { kind: 'photo', chapter: liaisonChapters.bracelets, image: image('liaison-bracelets', 'Stacked sculpted gold bangles gathered with silk at the wrist'), position: '50% 25%' },

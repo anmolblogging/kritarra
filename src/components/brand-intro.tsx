@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { KritarraLogo } from './logo';
+import { KritarraLockup } from './logo';
 
 export function BrandIntro() {
   const [visible, setVisible] = useState(true);
@@ -26,5 +26,5 @@ export function BrandIntro() {
 
   if (!visible) return null;
 
-  return <div className="brand-intro" aria-hidden="true"><span><KritarraLogo className="brand-intro-logo" tone="gold" /></span></div>;
+  return <div className="brand-intro" aria-hidden="true"><span><KritarraLockup className="brand-intro-logo" tone="gold" /></span></div>;
 }

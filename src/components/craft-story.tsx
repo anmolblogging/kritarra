@@ -11,7 +11,7 @@ export function CraftStory() {
 
   return <section ref={ref} className="craft-story craft-editorial" id="details" aria-labelledby="details-heading" data-section-motion={reduce ? 'static' : 'scroll'}>
     <div className="craft-visual">
-      <motion.div className="craft-photograph" style={{ y: reduce ? 0 : photographY }}><Asset photo={campaign.DW_HenXDHeO} label="Kritarra campaign portrait" position="50% 32%" sizes="100vw" /></motion.div>
+      <motion.div className="craft-photograph" style={{ y: reduce ? 0 : photographY }}><Asset photo={campaign.c2343} label="Kritarra campaign still" position="50% 50%" sizes="100vw" /></motion.div>
     </div>
     <motion.div className="craft-copy" initial={false} whileInView={reduce ? {} : { opacity: [0, 1], y: [16, 0] }} viewport={{ once: true, amount: .3 }} transition={{ duration: .8, ease: sectionEase }}>
       <h2 id="details-heading">A touch of <em>luxury</em></h2>

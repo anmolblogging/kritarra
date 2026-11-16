@@ -8,9 +8,9 @@ import { sectionEase, useQuietMotion } from './section-motion';
 
 const categories = [
   { name: 'Rings', photo: campaign['Dc-ogQ-vgSm'], position: '44% 40%' },
-  { name: 'Necklaces', photo: campaign.DRE3aGHDKCw, position: '50% 45%' },
-  { name: 'Earrings', photo: campaign.DMuceFtvoNP, position: '70% 40%' },
-  { name: 'Bracelets', photo: campaign.DLK5DXfNPGi, position: '52% 32%' },
+  { name: 'Necklaces', photo: campaign.c2296, position: '50% 40%' },
+  { name: 'Earrings', photo: campaign.c2295, position: '50% 30%' },
+  { name: 'Bracelets', photo: campaign.c2340, position: '50% 40%' },
 ];
 
 export function Discovery() {

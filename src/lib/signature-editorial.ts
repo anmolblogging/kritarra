@@ -14,7 +14,7 @@ export type EditorialSlide = EditorialPanelBase & (
 export const signatureEditorialSlides: EditorialSlide[] = [
   {
     id: 'the-creation', kind: 'image', offsetY: 0, depth: 4,
-    photo: campaign.DNCz7r3vGng,
+    photo: campaign.c2294,
     caption: '01 / A personal perspective',
   },
   {
@@ -27,7 +27,7 @@ export const signatureEditorialSlides: EditorialSlide[] = [
   },
   {
     id: 'the-detail', kind: 'image', offsetY: 100, depth: 2,
-    photo: campaign.DRE3aGHDKCw,
+    photo: campaign.c2352,
     caption: '03 / A study in detail',
   },
   {
