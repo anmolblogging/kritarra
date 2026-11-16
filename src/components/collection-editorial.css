@@ -1,7 +1,7 @@
 .collection-editorial {
   padding: clamp(60px, 8vw, 120px) var(--gutter);
-  background: #fff;
-  color: #292925;
+  background: var(--ivory);
+  color: var(--ink);
 }
 
 .collection-editorial-grid {
@@ -27,7 +27,7 @@
 .collection-editorial-note,
 .collection-editorial-note p {
   max-width: 24ch;
-  color: #595953;
+  color: #6b4b51;
   font-size: 11px;
   line-height: 1.65;
   letter-spacing: 0;
@@ -47,7 +47,7 @@
 
 .collection-editorial-image { display: block; min-width: 0; }
 .collection-editorial-image figure { margin: 0; }
-.collection-editorial-image .asset { height: auto; min-height: 0; aspect-ratio: 4 / 5; background: #eeefeb; }
+.collection-editorial-image .asset { height: auto; min-height: 0; aspect-ratio: 4 / 5; background: var(--champagne); }
 .collection-editorial-image .asset img { filter: saturate(.65); transition: transform 900ms cubic-bezier(.22, 1, .36, 1); }
 .collection-editorial-image.is-monochrome .asset img { filter: grayscale(1); }
 .collection-editorial-image:hover .asset img { transform: scale(1.025); }
@@ -70,8 +70,8 @@
   gap: 12px;
   min-height: 44px;
   margin-top: 14px;
-  border-bottom: 1px solid #c7c7be;
-  color: #292925;
+  border-bottom: 1px solid #c9a46a;
+  color: var(--ink);
   font-size: 10px;
 }
 

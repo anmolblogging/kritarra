@@ -5,3 +5,9 @@ out/
 .env*
 !.env.example
 .openai/*.local.*
+
+# OS files
+.DS_Store
+
+# Raw client PNGs (JPEG copies are committed)
+/images by client pro/*.PNG

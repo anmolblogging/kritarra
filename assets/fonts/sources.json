@@ -1,18 +1,18 @@
 [
   {
-    "family": "EB Garamond",
+    "family": "Archivo (Expanded, wdth 125) — stand-in for Söhne Breit",
     "style": "normal",
-    "weight": "400 500",
-    "source": "https://fonts.gstatic.com/s/ebgaramond/v33/SlGUmQSNjdsmc35JDF1K5GR1SDk_YAPI.woff2",
-    "output": "/fonts/eb-garamond-latin.woff2",
-    "sha256": "68fd4b247dde89984ee835d99953d235e4927be2b1b732ad81173b519869cee8"
+    "weight": "300 600",
+    "source": "https://fonts.gstatic.com/s/archivo/v25/k3kPo8UDI-1M0wlSV9XAw6lQkqWY8Q8EsLydOxKsv4Rn.woff2",
+    "output": "/fonts/archivo-expanded-latin.woff2",
+    "sha256": "86b5bbe21404f45ba87916a7bfd68f3377200ac9927009c1180dd67e1ab58358"
   },
   {
-    "family": "Manrope",
+    "family": "Work Sans",
     "style": "normal",
-    "weight": "400 600",
-    "source": "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSvfedN4.woff2",
-    "output": "/fonts/manrope-latin.woff2",
-    "sha256": "8bd97e6bbbc1f602a8f791530eed1064c9a357d5731bbc76e3fc587fb068728f"
+    "weight": "300 600",
+    "source": "https://fonts.gstatic.com/s/worksans/v24/QGYsz_wNahGAdqQ43Rh_fKDptfpA4Q.woff2",
+    "output": "/fonts/work-sans-latin.woff2",
+    "sha256": "72cd8f67849cc714f3364eeeb378df9a49f4aff00e6a3640fad36c9c93a9b197"
   }
 ]

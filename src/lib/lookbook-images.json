@@ -1,0 +1,308 @@
+{
+ "liaison-cover": {
+  "src": "/images/lookbook/liaison-cover-1280.webp",
+  "srcSet": "/images/lookbook/liaison-cover-720.webp 720w, /images/lookbook/liaison-cover-1280.webp 1280w",
+  "width": 1280,
+  "height": 1859
+ },
+ "liaison-statement": {
+  "src": "/images/lookbook/liaison-statement-1280.webp",
+  "srcSet": "/images/lookbook/liaison-statement-720.webp 720w, /images/lookbook/liaison-statement-1280.webp 1280w",
+  "width": 1280,
+  "height": 1707
+ },
+ "liaison-necklaces": {
+  "src": "/images/lookbook/liaison-necklaces-822.webp",
+  "srcSet": "/images/lookbook/liaison-necklaces-720.webp 720w, /images/lookbook/liaison-necklaces-822.webp 822w",
+  "width": 822,
+  "height": 1162
+ },
+ "liaison-wave-collar": {
+  "src": "/images/lookbook/liaison-wave-collar-1280.webp",
+  "srcSet": "/images/lookbook/liaison-wave-collar-720.webp 720w, /images/lookbook/liaison-wave-collar-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ },
+ "liaison-choker-model": {
+  "src": "/images/lookbook/liaison-choker-model-1280.webp",
+  "srcSet": "/images/lookbook/liaison-choker-model-720.webp 720w, /images/lookbook/liaison-choker-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1900
+ },
+ "liaison-oval-link-collar": {
+  "src": "/images/lookbook/liaison-oval-link-collar-976.webp",
+  "srcSet": "/images/lookbook/liaison-oval-link-collar-720.webp 720w, /images/lookbook/liaison-oval-link-collar-976.webp 976w",
+  "width": 976,
+  "height": 1106
+ },
+ "liaison-floral-link-collar": {
+  "src": "/images/lookbook/liaison-floral-link-collar-974.webp",
+  "srcSet": "/images/lookbook/liaison-floral-link-collar-720.webp 720w, /images/lookbook/liaison-floral-link-collar-974.webp 974w",
+  "width": 974,
+  "height": 1106
+ },
+ "liaison-wing-piece": {
+  "src": "/images/lookbook/liaison-wing-piece-1280.webp",
+  "srcSet": "/images/lookbook/liaison-wing-piece-720.webp 720w, /images/lookbook/liaison-wing-piece-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "liaison-lace-piece": {
+  "src": "/images/lookbook/liaison-lace-piece-1280.webp",
+  "srcSet": "/images/lookbook/liaison-lace-piece-720.webp 720w, /images/lookbook/liaison-lace-piece-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ },
+ "liaison-choker-red": {
+  "src": "/images/lookbook/liaison-choker-red-1280.webp",
+  "srcSet": "/images/lookbook/liaison-choker-red-720.webp 720w, /images/lookbook/liaison-choker-red-1280.webp 1280w",
+  "width": 1280,
+  "height": 1899
+ },
+ "liaison-ladder-collar": {
+  "src": "/images/lookbook/liaison-ladder-collar-973.webp",
+  "srcSet": "/images/lookbook/liaison-ladder-collar-720.webp 720w, /images/lookbook/liaison-ladder-collar-973.webp 973w",
+  "width": 973,
+  "height": 1106
+ },
+ "liaison-bracelets": {
+  "src": "/images/lookbook/liaison-bracelets-1280.webp",
+  "srcSet": "/images/lookbook/liaison-bracelets-720.webp 720w, /images/lookbook/liaison-bracelets-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "liaison-sculpted-cuff": {
+  "src": "/images/lookbook/liaison-sculpted-cuff-1280.webp",
+  "srcSet": "/images/lookbook/liaison-sculpted-cuff-720.webp 720w, /images/lookbook/liaison-sculpted-cuff-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ },
+ "liaison-openwork-cuff": {
+  "src": "/images/lookbook/liaison-openwork-cuff-973.webp",
+  "srcSet": "/images/lookbook/liaison-openwork-cuff-720.webp 720w, /images/lookbook/liaison-openwork-cuff-973.webp 973w",
+  "width": 973,
+  "height": 1106
+ },
+ "liaison-buckle-cuff": {
+  "src": "/images/lookbook/liaison-buckle-cuff-973.webp",
+  "srcSet": "/images/lookbook/liaison-buckle-cuff-720.webp 720w, /images/lookbook/liaison-buckle-cuff-973.webp 973w",
+  "width": 973,
+  "height": 1106
+ },
+ "liaison-pierced-cuff": {
+  "src": "/images/lookbook/liaison-pierced-cuff-1280.webp",
+  "srcSet": "/images/lookbook/liaison-pierced-cuff-720.webp 720w, /images/lookbook/liaison-pierced-cuff-1280.webp 1280w",
+  "width": 1280,
+  "height": 1809
+ },
+ "liaison-headbands": {
+  "src": "/images/lookbook/liaison-headbands-1280.webp",
+  "srcSet": "/images/lookbook/liaison-headbands-720.webp 720w, /images/lookbook/liaison-headbands-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "liaison-link-headband": {
+  "src": "/images/lookbook/liaison-link-headband-1280.webp",
+  "srcSet": "/images/lookbook/liaison-link-headband-720.webp 720w, /images/lookbook/liaison-link-headband-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ },
+ "liaison-leaf-headband-model": {
+  "src": "/images/lookbook/liaison-leaf-headband-model-1280.webp",
+  "srcSet": "/images/lookbook/liaison-leaf-headband-model-720.webp 720w, /images/lookbook/liaison-leaf-headband-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1897
+ },
+ "liaison-leaf-headband": {
+  "src": "/images/lookbook/liaison-leaf-headband-1280.webp",
+  "srcSet": "/images/lookbook/liaison-leaf-headband-720.webp 720w, /images/lookbook/liaison-leaf-headband-1280.webp 1280w",
+  "width": 1280,
+  "height": 1808
+ },
+ "emerald-cover": {
+  "src": "/images/lookbook/emerald-cover-1280.webp",
+  "srcSet": "/images/lookbook/emerald-cover-720.webp 720w, /images/lookbook/emerald-cover-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "emerald-statement": {
+  "src": "/images/lookbook/emerald-statement-1280.webp",
+  "srcSet": "/images/lookbook/emerald-statement-720.webp 720w, /images/lookbook/emerald-statement-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "emerald-necklaces": {
+  "src": "/images/lookbook/emerald-necklaces-1280.webp",
+  "srcSet": "/images/lookbook/emerald-necklaces-720.webp 720w, /images/lookbook/emerald-necklaces-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "emerald-pearl-necklace": {
+  "src": "/images/lookbook/emerald-pearl-necklace-1280.webp",
+  "srcSet": "/images/lookbook/emerald-pearl-necklace-720.webp 720w, /images/lookbook/emerald-pearl-necklace-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ },
+ "emerald-earrings": {
+  "src": "/images/lookbook/emerald-earrings-1280.webp",
+  "srcSet": "/images/lookbook/emerald-earrings-720.webp 720w, /images/lookbook/emerald-earrings-1280.webp 1280w",
+  "width": 1280,
+  "height": 1809
+ },
+ "emerald-bird-earrings": {
+  "src": "/images/lookbook/emerald-bird-earrings-974.webp",
+  "srcSet": "/images/lookbook/emerald-bird-earrings-720.webp 720w, /images/lookbook/emerald-bird-earrings-974.webp 974w",
+  "width": 974,
+  "height": 1106
+ },
+ "emerald-ruby-studs": {
+  "src": "/images/lookbook/emerald-ruby-studs-974.webp",
+  "srcSet": "/images/lookbook/emerald-ruby-studs-720.webp 720w, /images/lookbook/emerald-ruby-studs-974.webp 974w",
+  "width": 974,
+  "height": 1106
+ },
+ "emerald-veil-earring": {
+  "src": "/images/lookbook/emerald-veil-earring-1280.webp",
+  "srcSet": "/images/lookbook/emerald-veil-earring-720.webp 720w, /images/lookbook/emerald-veil-earring-1280.webp 1280w",
+  "width": 1280,
+  "height": 1899
+ },
+ "emerald-long-jhumkas": {
+  "src": "/images/lookbook/emerald-long-jhumkas-1280.webp",
+  "srcSet": "/images/lookbook/emerald-long-jhumkas-720.webp 720w, /images/lookbook/emerald-long-jhumkas-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "emerald-jhumka-model": {
+  "src": "/images/lookbook/emerald-jhumka-model-1280.webp",
+  "srcSet": "/images/lookbook/emerald-jhumka-model-720.webp 720w, /images/lookbook/emerald-jhumka-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1863
+ },
+ "emerald-jhumkas": {
+  "src": "/images/lookbook/emerald-jhumkas-1280.webp",
+  "srcSet": "/images/lookbook/emerald-jhumkas-720.webp 720w, /images/lookbook/emerald-jhumkas-1280.webp 1280w",
+  "width": 1280,
+  "height": 1717
+ },
+ "emerald-line-drops": {
+  "src": "/images/lookbook/emerald-line-drops-1280.webp",
+  "srcSet": "/images/lookbook/emerald-line-drops-720.webp 720w, /images/lookbook/emerald-line-drops-1280.webp 1280w",
+  "width": 1280,
+  "height": 1805
+ },
+ "emerald-frame-earrings": {
+  "src": "/images/lookbook/emerald-frame-earrings-971.webp",
+  "srcSet": "/images/lookbook/emerald-frame-earrings-720.webp 720w, /images/lookbook/emerald-frame-earrings-971.webp 971w",
+  "width": 971,
+  "height": 1103
+ },
+ "emerald-pear-drops": {
+  "src": "/images/lookbook/emerald-pear-drops-974.webp",
+  "srcSet": "/images/lookbook/emerald-pear-drops-720.webp 720w, /images/lookbook/emerald-pear-drops-974.webp 974w",
+  "width": 974,
+  "height": 1106
+ },
+ "emerald-bracelets": {
+  "src": "/images/lookbook/emerald-bracelets-1280.webp",
+  "srcSet": "/images/lookbook/emerald-bracelets-720.webp 720w, /images/lookbook/emerald-bracelets-1280.webp 1280w",
+  "width": 1280,
+  "height": 1811
+ },
+ "emerald-wrap-bracelet": {
+  "src": "/images/lookbook/emerald-wrap-bracelet-1029.webp",
+  "srcSet": "/images/lookbook/emerald-wrap-bracelet-720.webp 720w, /images/lookbook/emerald-wrap-bracelet-1029.webp 1029w",
+  "width": 1029,
+  "height": 1394
+ },
+ "emerald-bangle-model": {
+  "src": "/images/lookbook/emerald-bangle-model-1280.webp",
+  "srcSet": "/images/lookbook/emerald-bangle-model-720.webp 720w, /images/lookbook/emerald-bangle-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1809
+ },
+ "emerald-flower-bangle": {
+  "src": "/images/lookbook/emerald-flower-bangle-1280.webp",
+  "srcSet": "/images/lookbook/emerald-flower-bangle-720.webp 720w, /images/lookbook/emerald-flower-bangle-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ },
+ "emerald-ruby-cuff": {
+  "src": "/images/lookbook/emerald-ruby-cuff-1280.webp",
+  "srcSet": "/images/lookbook/emerald-ruby-cuff-720.webp 720w, /images/lookbook/emerald-ruby-cuff-1280.webp 1280w",
+  "width": 1280,
+  "height": 1808
+ },
+ "emerald-cuff-model": {
+  "src": "/images/lookbook/emerald-cuff-model-1280.webp",
+  "srcSet": "/images/lookbook/emerald-cuff-model-720.webp 720w, /images/lookbook/emerald-cuff-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1900
+ },
+ "emerald-rings": {
+  "src": "/images/lookbook/emerald-rings-1280.webp",
+  "srcSet": "/images/lookbook/emerald-rings-720.webp 720w, /images/lookbook/emerald-rings-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "emerald-twin-ring": {
+  "src": "/images/lookbook/emerald-twin-ring-1280.webp",
+  "srcSet": "/images/lookbook/emerald-twin-ring-720.webp 720w, /images/lookbook/emerald-twin-ring-1280.webp 1280w",
+  "width": 1280,
+  "height": 1720
+ },
+ "emerald-ring-model": {
+  "src": "/images/lookbook/emerald-ring-model-1280.webp",
+  "srcSet": "/images/lookbook/emerald-ring-model-720.webp 720w, /images/lookbook/emerald-ring-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1809
+ },
+ "emerald-cut-ring": {
+  "src": "/images/lookbook/emerald-cut-ring-976.webp",
+  "srcSet": "/images/lookbook/emerald-cut-ring-720.webp 720w, /images/lookbook/emerald-cut-ring-976.webp 976w",
+  "width": 976,
+  "height": 1106
+ },
+ "emerald-pave-ring": {
+  "src": "/images/lookbook/emerald-pave-ring-974.webp",
+  "srcSet": "/images/lookbook/emerald-pave-ring-720.webp 720w, /images/lookbook/emerald-pave-ring-974.webp 974w",
+  "width": 974,
+  "height": 1106
+ },
+ "emerald-maang-tikka": {
+  "src": "/images/lookbook/emerald-maang-tikka-1280.webp",
+  "srcSet": "/images/lookbook/emerald-maang-tikka-720.webp 720w, /images/lookbook/emerald-maang-tikka-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "emerald-pendant-tikka": {
+  "src": "/images/lookbook/emerald-pendant-tikka-1280.webp",
+  "srcSet": "/images/lookbook/emerald-pendant-tikka-720.webp 720w, /images/lookbook/emerald-pendant-tikka-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ },
+ "emerald-chain-tikka": {
+  "src": "/images/lookbook/emerald-chain-tikka-1280.webp",
+  "srcSet": "/images/lookbook/emerald-chain-tikka-720.webp 720w, /images/lookbook/emerald-chain-tikka-1280.webp 1280w",
+  "width": 1280,
+  "height": 1810
+ },
+ "emerald-tikka-model": {
+  "src": "/images/lookbook/emerald-tikka-model-1280.webp",
+  "srcSet": "/images/lookbook/emerald-tikka-model-720.webp 720w, /images/lookbook/emerald-tikka-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1802
+ },
+ "emerald-shell-model": {
+  "src": "/images/lookbook/emerald-shell-model-1280.webp",
+  "srcSet": "/images/lookbook/emerald-shell-model-720.webp 720w, /images/lookbook/emerald-shell-model-1280.webp 1280w",
+  "width": 1280,
+  "height": 1811
+ },
+ "emerald-shell-ornaments": {
+  "src": "/images/lookbook/emerald-shell-ornaments-1280.webp",
+  "srcSet": "/images/lookbook/emerald-shell-ornaments-720.webp 720w, /images/lookbook/emerald-shell-ornaments-1280.webp 1280w",
+  "width": 1280,
+  "height": 1719
+ }
+}

@@ -28,7 +28,6 @@ export default function Home() {
       <CollectionEditorial />
       {/* <VisualJournal /> */}
       {/* <Remembered /> */}
-      <CraftJourney />
       <section className="social-section section">
         <Reveal className="section-heading">
           <div>
@@ -74,6 +73,7 @@ export default function Home() {
           </a>
         </div> */}
       </section>
+      <CraftJourney />
     </main>
   );
 }

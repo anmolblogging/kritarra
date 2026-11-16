@@ -1,0 +1,106 @@
+/* Lookbook 2026: the printed lookbooks as two-page spreads (single pages on phones). */
+.lookbook{background:var(--ivory)}
+
+.lb-intro{padding:72px var(--gutter) 64px;text-align:center}
+.lb-intro h1{font-size:clamp(56px,6vw,86px);line-height:1.02;color:var(--ink)}
+.lb-intro>p{max-width:520px;margin:24px auto 0;font-size:14px;line-height:1.85}
+.lb-index{display:flex;justify-content:center;gap:16px;margin-top:48px}
+.lb-index-card{position:relative;display:block;width:min(260px,40vw);aspect-ratio:4/5;overflow:hidden;color:#fff;text-align:left}
+.lb-index-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.22,1,.36,1)}
+.lb-index-card::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 55%)}
+.lb-index-card:hover img{transform:scale(1.04)}
+.lb-index-number,.lb-index-name{position:absolute;left:18px;z-index:1}
+.lb-index-number{top:16px;font-size:11px;letter-spacing:.12em}
+.lb-index-name{bottom:18px;right:18px;font-family:var(--serif);font-size:24px;line-height:1.1}
+
+/* Spreads */
+.lb-collection{--page-h:min(62.5vw,calc(100svh - 112px));display:grid;gap:12px;padding:0 12px 12px}
+.lb-spread{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.lb-page{position:relative;height:var(--page-h);min-height:520px;margin:0;overflow:hidden;background:#fbfaf8}
+.lb-page>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lb-ground-white .lb-still{background:#eeedeb}
+.lb-ground-grey .lb-still{background:#9b9b9b}
+
+/* Small wide-set labels, as in the printed book */
+.lb-label,.lb-caption,.lb-foot,.lb-cover-mark,.lb-title-mark,.lb-cover-lockup span,.lb-title-index a{font-family:var(--serif);font-size:13px;line-height:1.4;letter-spacing:.2em;text-transform:uppercase}
+
+/* Cover: model portrait with the house lock-up */
+.lb-cover{color:#fff}
+.lb-cover::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5),transparent 38%),linear-gradient(to bottom,rgba(0,0,0,.28),transparent 18%);pointer-events:none}
+.lb-cover-mark{position:absolute;z-index:1;top:5%;left:0;right:0;text-align:center}
+.lb-cover-lockup{position:absolute;z-index:1;bottom:7%;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:10px}
+.lb-cover-logo{width:min(170px,34%);height:auto}
+.lb-cover-lockup span{font-size:11px;letter-spacing:.3em}
+
+/* Title: deep maroon page with the collection name and its chapters */
+.lb-title{display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:5% 8% 6%;background:var(--burgundy-deep);color:var(--ivory);text-align:center}
+.lb-title-mark{color:rgba(248,246,241,.75)}
+.lb-title-symbol{display:block;width:36px;height:auto;margin:0 auto 28px;color:var(--gold-light)}
+.lb-title h2{font-size:clamp(40px,4.2vw,68px);line-height:1.04;letter-spacing:-.03em;color:var(--ivory)}
+.lb-title p{max-width:340px;margin:22px auto 0;font-size:14px;line-height:1.8;color:#ead6cf}
+.lb-title-index{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px}
+.lb-title-index a{font-size:12px;color:var(--gold-light);border-bottom:1px solid transparent;transition:border-color .3s}
+.lb-title-index a:hover,.lb-title-index a:focus-visible{border-color:var(--gold-light)}
+
+/* Statement: the collection text */
+.lb-statement{display:flex;align-items:center;padding:8% 11% 12%}
+.lb-statement-copy{max-width:480px}
+.lb-label{display:block;margin-bottom:26px;font-size:12px;color:var(--gold-text)}
+.lb-statement-lead{font-family:var(--serif);font-size:clamp(26px,2.4vw,38px);line-height:1.18;letter-spacing:-.02em;color:var(--ink)}
+.lb-statement-copy p:not(.lb-statement-lead){margin-top:22px;font-size:14px;line-height:1.85}
+
+/* Full-bleed portraits; chapter openers carry the English and Hindi names */
+.lb-chapter{position:absolute;z-index:1;top:50%;left:6%;right:6%;display:flex;align-items:baseline;justify-content:space-between;gap:20px;color:#fff;text-shadow:0 1px 14px rgba(0,0,0,.35);transform:translateY(-50%)}
+.lb-chapter h3{font-family:var(--serif);font-size:18px;line-height:1.3;letter-spacing:.22em;text-transform:uppercase;color:#fff}
+.lb-chapter span{font-family:'Kohinoor Devanagari','Noto Sans Devanagari','Mukta',sans-serif;font-size:15px}
+.lb-photo{scroll-margin-top:110px}
+
+/* Product stills, captioned at the page edges */
+.lb-caption{position:absolute;z-index:1;top:50%;left:6%;right:6%;display:flex;justify-content:space-between;gap:20px;color:#5d4a4f;transform:translateY(-50%);pointer-events:none}
+.lb-ground-grey .lb-still .lb-caption{color:rgba(255,255,255,.88)}
+
+/* Two-up product page with the running foot */
+.lb-pair{display:grid;grid-template-rows:1fr 1fr;padding:5% 7% 13%}
+.lb-pair-item{margin:0;width:min(44%,calc(var(--page-h) * .34))}
+.lb-pair-item-1{justify-self:end;align-self:start}
+.lb-pair-item-2{justify-self:start;align-self:end}
+.lb-pair-frame{position:relative;aspect-ratio:.88;overflow:hidden;background:#eeedeb}
+.lb-pair-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lb-pair .lb-caption{position:static;transform:none;margin-top:12px;font-size:11px;justify-content:flex-start;gap:24px;color:#5d4a4f}
+.lb-foot{position:absolute;left:7%;right:7%;bottom:4.5%;display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#7d6a6f}
+.lb-foot-symbol{width:14px;height:auto;color:var(--burgundy)}
+
+/* Closing page */
+.lb-close{display:flex;flex-direction:column;align-items:center;padding:120px var(--gutter) 130px;background:var(--burgundy-deep);color:var(--ivory);text-align:center}
+.lb-close-logo{width:min(260px,60vw);height:auto}
+.lb-close p{max-width:380px;margin:34px 0 18px;font-size:14px;line-height:1.8;color:#ead6cf}
+
+@media(prefers-reduced-motion:no-preference){
+ @supports(animation-timeline:view()){
+  .lb-page>img,.lb-pair-frame img{animation:lb-settle linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+  @keyframes lb-settle{from{transform:scale(1.07)}to{transform:scale(1)}}
+ }
+}
+
+@media(max-width:767px){
+ .lb-intro{padding:48px 20px 44px}
+ .lb-intro h1{font-size:46px}
+ .lb-intro>p{font-size:13px}
+ .lb-index{gap:10px;margin-top:34px}
+ .lb-index-card{width:44vw}
+ .lb-index-name{font-size:17px;left:14px;right:14px;bottom:14px}
+ .lb-collection,.lb-spread{gap:8px}
+ .lb-collection{padding:0 8px 8px}
+ .lb-spread{grid-template-columns:1fr}
+ .lb-page{height:auto;min-height:0;aspect-ratio:4/5}
+ .lb-title{padding:8% 8% 9%}
+ .lb-statement,.lb-pair{aspect-ratio:auto}
+ .lb-statement{padding:56px 24px 88px}
+ .lb-pair{grid-template-rows:none;grid-template-columns:1fr 1fr;gap:12px;padding:28px 18px 72px}
+ .lb-pair-item{width:100%}
+ .lb-pair-item-2{margin-top:56px}
+ .lb-foot{bottom:24px}
+ .lb-chapter h3{font-size:15px}
+ .lb-caption{top:auto;bottom:18px;transform:none}
+ .lb-close{padding:84px 24px 96px}
+}

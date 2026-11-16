@@ -1,2 +1,13 @@
-@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400 500;font-display:swap;src:url('/fonts/eb-garamond-latin.woff2') format('woff2')}
-@font-face{font-family:'Manrope';font-style:normal;font-weight:400 600;font-display:swap;src:url('/fonts/manrope-latin.woff2') format('woff2')}
+/*
+ * Brand typography (Kritarra Brand Manual, p.27):
+ *   Headlines, titles, key messaging → Söhne Breit
+ *   Body copy, descriptions, functional text → Work Sans
+ *
+ * Söhne Breit is a commercial Klim Type Foundry face. Until a web licence is
+ * supplied, "Kritarra Display" falls back to Archivo Expanded (OFL), the
+ * closest free wide grotesque. To switch: add sohne-breit-buch.woff2 to
+ * /public/fonts and list it first in the src below. size-adjust keeps the
+ * wide face within the measure the layouts were built for.
+ */
+@font-face{font-family:'Kritarra Display';font-style:normal;font-weight:300 600;font-display:swap;size-adjust:70%;src:local('Söhne Breit Buch'),local('SohneBreit-Buch'),url('/fonts/archivo-expanded-latin.woff2') format('woff2')}
+@font-face{font-family:'Work Sans';font-style:normal;font-weight:300 600;font-display:swap;src:url('/fonts/work-sans-latin.woff2') format('woff2')}

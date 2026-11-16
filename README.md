@@ -35,7 +35,7 @@ The homepage opens with a 5.2-second KRITARRA wordmark intro once per tab sessio
 
 ## Art direction
 
-Warm ivory `#F8F6F1`, champagne `#EAE0D4`, charcoal `#24211F`, taupe `#82766C`, antique gold `#AD956B`. Locally hosted EB Garamond with Manrope. Editorial asymmetry, restrained borders, generous spacing, and one scroll-linked three-panel sequence. Design tokens live in `src/app/globals.css`.
+Palette from the Kritarra Brand Manual: burgundy `#49101E` (text, dark sections, footer), gold foil gradient (`#E4C386` → `#F1E8DA` → `#B7873E`) for accents and the logotype on burgundy, Ivory Glow `#FCE7DE` panels, Blush Sand `#EFC4AE`, Light Blue `#C2E6F0` (reserved), on a rose-ivory page `#FCF6F2`. The header, footer and intro use the official logotype (brand manual p.5) via `src/components/logo.tsx` (also at `public/images/brand/kritarra-logotype.svg`). Typography per brand manual p.27: Söhne Breit for display (stand-in: locally hosted Archivo Expanded until a Söhne Breit web licence is added; see `src/app/fonts.css`) with Work Sans for body copy. Editorial asymmetry, restrained borders, generous spacing, and one scroll-linked three-panel sequence. Design tokens live in `src/app/globals.css`.
 
 ## Sources
 
@@ -93,7 +93,7 @@ The footer uses the user-supplied emerald-on-blue-silk post (DOgKA81j9ju) as a r
 
 ## Typography and letter signup
 
-EB Garamond supplies upright display typography, including emphasized phrases; Manrope supplies reading copy, labels and controls across every route. Latin WOFF2 files are served locally with bundled OFL licences, font-display swap and preloaded roman/UI faces. Sources and checksums live in assets/fonts/sources.json. Small labels are at least 11px, and the email input stays at 16px. The letter signup sits inside the footer with an underlined action and visible white keyboard focus; its existing submission feedback and privacy navigation are retained.
+The display face (Söhne Breit, with Archivo Expanded as the licensed stand-in) supplies headlines, including gold emphasized phrases; Work Sans supplies reading copy, labels and controls across every route. Latin WOFF2 files are served locally with bundled OFL licences, font-display swap and preloaded roman/UI faces. Sources and checksums live in assets/fonts/sources.json. Small labels are at least 11px, and the email input stays at 16px. The letter signup sits inside the footer with an underlined action and visible white keyboard focus; its existing submission feedback and privacy navigation are retained.
 
 Supporting text uses sentence case, restrained tracking and 12px labels. Short homepage descriptions use 14px text and direct wording. The upright display typography and border-free newsletter section are retained.
 
