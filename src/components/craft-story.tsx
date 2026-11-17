@@ -2,7 +2,7 @@
 
 import { motion, useTransform } from 'motion/react';
 import { campaign } from '@/lib/imagery';
-import { Asset, TextLink } from './editorial';
+import { Asset } from './editorial';
 import { sectionEase, useSectionMotion } from './section-motion';
 
 export function CraftStory() {
@@ -13,13 +13,12 @@ export function CraftStory() {
     <div className="craft-visual">
       <motion.div className="craft-photograph" style={{ y: reduce ? 0 : photographY }}><Asset photo={campaign.c2343} label="Kritarra campaign still" position="50% 50%" sizes="100vw" /></motion.div>
     </div>
-    <motion.div className="craft-copy" initial={false} whileInView={reduce ? {} : { opacity: [0, 1], y: [16, 0] }} viewport={{ once: true, amount: .3 }} transition={{ duration: .8, ease: sectionEase }}>
-      <h2 id="details-heading">A touch of <em>luxury</em></h2>
-      <div className="craft-description">
-        <p>More than just jewellery — each piece tells a story of elegance, passion, and timeless beauty.</p>
-        <p>Designed to captivate, crafted to last, our creations blend artistry with sophistication, turning every detail into a little luxury of your own.</p>
-        <TextLink href="/about/">Explore the craft</TextLink>
-      </div>
-    </motion.div>
+    {/* A single line from the Kritarra lookbook, set over the photograph. */}
+    <motion.figure className="craft-quote" initial={false} whileInView={reduce ? {} : { opacity: [0, 1], y: [18, 0] }} viewport={{ once: true, amount: .4 }} transition={{ duration: 1, ease: sectionEase }}>
+      <blockquote>
+        <p id="details-heading">The rarest luxury today is not recognition, but individuality.</p>
+      </blockquote>
+      <figcaption>Kritarra</figcaption>
+    </motion.figure>
   </section>;
 }
