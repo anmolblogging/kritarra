@@ -61,7 +61,7 @@ export function Newsletter() {
    <motion.form className="letter-form" onSubmit={submit} aria-busy={busy} initial={false} whileInView={reduce?{}:{opacity:[0,1],y:[18,0]}} viewport={{once:true,amount:.3}} transition={{duration:.9,delay:.18,ease:sectionEase}}>
     <div className="letter-entry">
     <div className="letter-field">
-     <label htmlFor="newsletter-email">Your email address</label>
+     <label htmlFor="newsletter-email" className="sr-only">Your email address</label>
      <input id="newsletter-email" type="email" value={email} onChange={event=>setEmail(event.target.value)} placeholder="Enter your email address" required autoComplete="email" maxLength={254} aria-describedby="newsletter-privacy newsletter-status" />
     </div>
      <button className="letter-submit" type="submit" disabled={busy} aria-label="Subscribe to the Kritarra letter"><span>{busy?'Sending…':'Join the letter'}</span></button>

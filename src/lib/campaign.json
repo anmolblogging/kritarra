@@ -832,31 +832,31 @@
     "alt": "An openwork gold choker tied with a red silk scarf",
     "source": "https://www.instagram.com/kritarraofficial/"
   },
-  "c2211": {
-    "id": "c2211",
-    "src": "/images/campaign/client-2211-1440.webp",
-    "srcSet": "/images/campaign/client-2211-640.webp 640w, /images/campaign/client-2211-960.webp 960w, /images/campaign/client-2211-1440.webp 1440w, /images/campaign/client-2211-1920.webp 1920w",
+  "liaisonCover": {
+    "id": "liaisonCover",
+    "src": "/images/campaign/liaison-cover-1440.webp",
+    "srcSet": "/images/campaign/liaison-cover-640.webp 640w, /images/campaign/liaison-cover-960.webp 960w, /images/campaign/liaison-cover-1440.webp 1440w, /images/campaign/liaison-cover-1920.webp 1920w",
     "variants": [
       {
-        "src": "/images/campaign/client-2211-640.webp",
+        "src": "/images/campaign/liaison-cover-640.webp",
         "width": 640
       },
       {
-        "src": "/images/campaign/client-2211-960.webp",
+        "src": "/images/campaign/liaison-cover-960.webp",
         "width": 960
       },
       {
-        "src": "/images/campaign/client-2211-1440.webp",
+        "src": "/images/campaign/liaison-cover-1440.webp",
         "width": 1440
       },
       {
-        "src": "/images/campaign/client-2211-1920.webp",
+        "src": "/images/campaign/liaison-cover-1920.webp",
         "width": 1920
       }
     ],
     "width": 1920,
     "height": 2400,
-    "alt": "An emerald and diamond maang tikka worn beneath a sheer ivory veil",
+    "alt": "A sculpted gold cuff tied at the wrist with green printed silk, from the Liaison collection",
     "source": "https://www.instagram.com/kritarraofficial/"
   }
 }

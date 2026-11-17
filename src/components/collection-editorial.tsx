@@ -45,9 +45,6 @@ export function CollectionEditorial() {
         <EditorialImage placement="collection-editorial-necklace" photo={campaign.c2342} caption="A study in detail · Necklaces" href="/products/necklaces/" position="50% 40%" />
         <EditorialImage placement="collection-editorial-stone" photo={campaign.DOgKA81j9ju} caption="Where it begins" href="/about/" />
         <EditorialImage placement="collection-editorial-statement" photo={campaign.c2673} caption="An expressive gesture · Bracelets" href="/products/bracelets/" position="50% 45%" />
-        <EditorialImage placement="collection-editorial-portrait" photo={campaign.c2711} caption="The Kritarra perspective" href="/about/" position="50% 30%" />
-        <EditorialImage placement="collection-editorial-botanical" photo={campaign.DdqsB01sVOc} caption="Inspired by nature" href="/about/" />
-        <EditorialImage placement="collection-editorial-finale" photo={campaign.DQRYf7QDNzm} caption="An accent of individuality" href="/products/earrings/" position="45% 32%" />
       </div>
     </section>
   );

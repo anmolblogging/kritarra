@@ -23,7 +23,7 @@ export default function Home() {
       <KritarraEditorialSlider slides={signatureEditorialSlides} />
       <Discovery />
       <Perspective />
-      <CuratedSelection />
+      {/* <CuratedSelection /> */}
       <CraftStory />
       <CollectionEditorial />
       {/* <VisualJournal /> */}

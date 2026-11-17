@@ -87,7 +87,8 @@ try {
 
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.locator('#signature[data-editorial-motion="diagonal"]').waitFor();
-  await page.locator('#signature .text-link').click();
+  // The section heading and its link were removed; navigate away through the footer instead.
+  await page.locator('footer a[href="/collections/"]').first().click();
   await page.waitForURL('**/collections/');
   assert.equal(await page.locator('#signature').count(), 0);
   await page.locator('header .wordmark').click();
