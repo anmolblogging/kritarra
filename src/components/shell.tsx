@@ -75,7 +75,8 @@ export function Newsletter() {
  );
 }
 export function Footer() {
- const photo=campaign.DOgKA81j9ju;
+ // Footer ground: the campaign emerald set small on its own silk (composed from DOgKA81j9ju).
+ const photo=campaign.footerSilk;
  return <footer className="site-footer footer-campaign" id="footer">
   <div className="footer-campaign-media" aria-hidden="true"><img src={photo.src} srcSet={photo.srcSet} sizes="100vw" width={photo.width} height={photo.height} alt="" loading="lazy" decoding="async"/></div>
   <div className="footer-intro">

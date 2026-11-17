@@ -858,5 +858,28 @@
     "height": 2400,
     "alt": "A sculpted gold cuff tied at the wrist with green printed silk, from the Liaison collection",
     "source": "https://www.instagram.com/kritarraofficial/"
+  },
+  "footerSilk": {
+    "id": "footerSilk",
+    "src": "/images/campaign/footer-silk-emerald-1440.webp",
+    "srcSet": "/images/campaign/footer-silk-emerald-960.webp 960w, /images/campaign/footer-silk-emerald-1440.webp 1440w, /images/campaign/footer-silk-emerald-2880.webp 2880w",
+    "variants": [
+      {
+        "src": "/images/campaign/footer-silk-emerald-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/images/campaign/footer-silk-emerald-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/images/campaign/footer-silk-emerald-2880.webp",
+        "width": 2880
+      }
+    ],
+    "width": 2880,
+    "height": 1400,
+    "alt": "",
+    "source": "https://www.instagram.com/kritarraofficial/"
   }
 }
