@@ -26,5 +26,5 @@ export function BrandIntro() {
 
   if (!visible) return null;
 
-  return <div className="brand-intro" aria-hidden="true"><span><KritarraLockup className="brand-intro-logo" tone="gold" /></span></div>;
+  return <div className="brand-intro" aria-hidden="true"><span><KritarraLockup className="brand-intro-logo" /></span></div>;
 }
