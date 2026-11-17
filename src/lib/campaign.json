@@ -831,5 +831,32 @@
     "height": 2357,
     "alt": "An openwork gold choker tied with a red silk scarf",
     "source": "https://www.instagram.com/kritarraofficial/"
+  },
+  "c2211": {
+    "id": "c2211",
+    "src": "/images/campaign/client-2211-1440.webp",
+    "srcSet": "/images/campaign/client-2211-640.webp 640w, /images/campaign/client-2211-960.webp 960w, /images/campaign/client-2211-1440.webp 1440w, /images/campaign/client-2211-1920.webp 1920w",
+    "variants": [
+      {
+        "src": "/images/campaign/client-2211-640.webp",
+        "width": 640
+      },
+      {
+        "src": "/images/campaign/client-2211-960.webp",
+        "width": 960
+      },
+      {
+        "src": "/images/campaign/client-2211-1440.webp",
+        "width": 1440
+      },
+      {
+        "src": "/images/campaign/client-2211-1920.webp",
+        "width": 1920
+      }
+    ],
+    "width": 1920,
+    "height": 2400,
+    "alt": "An emerald and diamond maang tikka worn beneath a sheer ivory veil",
+    "source": "https://www.instagram.com/kritarraofficial/"
   }
 }
