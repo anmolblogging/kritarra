@@ -19,7 +19,6 @@
   font-size: clamp(28px, 3.05vw, 46px);
   line-height: 1.04;
   letter-spacing: -.025em;
-  text-transform: uppercase;
   text-align: justify;
   text-wrap: pretty;
 }
@@ -41,9 +40,6 @@
 .collection-editorial-necklace { grid-area: 4 / 1; }
 .collection-editorial-stone { grid-area: 4 / 2; }
 .collection-editorial-statement { grid-area: 4 / 3 / 6 / 5; }
-.collection-editorial-portrait { grid-area: 6 / 1 / 8 / 3; margin-top: 30px; }
-.collection-editorial-botanical { grid-area: 6 / 4; margin-top: 30px; }
-.collection-editorial-finale { grid-area: 7 / 3; align-self: end; }
 
 .collection-editorial-image { display: block; min-width: 0; }
 .collection-editorial-image figure { margin: 0; }
@@ -94,9 +90,6 @@
   .collection-editorial-necklace { grid-area: 6 / 1; }
   .collection-editorial-stone { grid-area: 6 / 2; margin-top: 38px; }
   .collection-editorial-statement { grid-area: 7 / 1 / 8 / 3; margin-left: 12%; }
-  .collection-editorial-portrait { grid-area: 8 / 1 / 9 / 3; margin: 12px 12% 0 0; }
-  .collection-editorial-botanical { grid-area: 9 / 2; margin: 0; }
-  .collection-editorial-finale { grid-area: 9 / 1; margin-top: 52px; }
   .collection-editorial-image figcaption { font-size: 8px; gap: 4px; }
 }
 

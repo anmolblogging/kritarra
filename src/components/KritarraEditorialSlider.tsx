@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, type CSSProperties } from 'react';
-import { Asset, TextLink } from './editorial';
+import { Asset } from './editorial';
 import type { EditorialSlide } from '@/lib/signature-editorial';
 
 type Props = {
@@ -9,8 +9,6 @@ type Props = {
   id?: string;
   heading?: string;
   headingEmphasis?: string;
-  eyebrow?: string;
-  collectionHref?: string;
 };
 
 export function KritarraEditorialSlider({
@@ -18,8 +16,6 @@ export function KritarraEditorialSlider({
   id = 'signature',
   heading = 'The signature',
   headingEmphasis = 'edit.',
-  eyebrow = 'Selected pieces',
-  collectionHref = '/collections/',
 }: Props) {
   const sectionRef = useRef<HTMLElement>(null);
   const windowRef = useRef<HTMLDivElement>(null);
@@ -95,13 +91,8 @@ export function KritarraEditorialSlider({
 
   return (
     <section id={id} ref={sectionRef} className="kritarra-editorial" aria-labelledby={`${id}-heading`}>
-      <div className="section-heading kritarra-editorial-heading">
-        <div>
-          <span className="eyebrow">{eyebrow}</span>
-          <h2 id={`${id}-heading`}>{heading} <em>{headingEmphasis}</em></h2>
-        </div>
-        <TextLink href={collectionHref}>Explore the collection</TextLink>
-      </div>
+      {/* The visible heading was removed at the client's request; it stays for screen readers. */}
+      <h2 id={`${id}-heading`} className="sr-only">{heading} {headingEmphasis}</h2>
 
       <div ref={windowRef} className="kritarra-editorial-window">
         <div ref={trackRef} className="kritarra-editorial-track">

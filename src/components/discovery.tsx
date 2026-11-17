@@ -11,8 +11,8 @@ const categories = [
   { name: 'Necklaces', href: '/collections/necklaces/', photo: campaign.c2296, position: '50% 40%' },
   { name: 'Earrings', href: '/collections/earrings/', photo: campaign.c2295, position: '50% 30%' },
   { name: 'Bracelets', href: '/collections/bracelets/', photo: campaign.c2340, position: '50% 40%' },
-  // No collection page yet: Maang tikka opens its chapter in the Emerald lookbook.
-  { name: 'Maang tikka', href: '/lookbook/#emerald-maang-tikka', photo: campaign.c2211, position: '50% 30%' },
+  // The Liaison collection has no category page; the card opens its lookbook.
+  { name: 'Liaison', href: '/lookbook/#liaison', photo: campaign.liaisonCover, position: '50% 40%' },
 ];
 
 export function Discovery() {
@@ -24,7 +24,7 @@ export function Discovery() {
           <span className="eyebrow">Find what speaks to you</span>
           <h2 id="discovery-heading">The art of <em>discovery.</em></h2>
         </div>
-        <p>Rings, necklaces, earrings, bracelets and maang tikka.<br />Find a piece to make your own.</p>
+        <p>Rings, necklaces, earrings, bracelets and Liaison.<br />Find a piece to make your own.</p>
       </Reveal>
 
       <nav className="discovery-grid" aria-label="Discover jewellery categories">
