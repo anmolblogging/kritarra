@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { craftJourneyChapters, type JourneyChapter } from '@/lib/craft-journey';
 import './craft-journey.css';
@@ -93,5 +94,58 @@ export function CraftJourney({ chapters = craftJourneyChapters }: {
         </ol>
       </div>
     </div>
+    <JourneyCarousel chapters={chapters} total={total} />
   </section>;
+}
+
+/* Phones: the eight chapters become a swipeable row of cards, one chapter per card. */
+function JourneyCarousel({ chapters, total }: { chapters: readonly JourneyChapter[]; total: string }) {
+  const trackRef = useRef<HTMLOListElement>(null);
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const card = track.firstElementChild as HTMLElement | null;
+      if (!card) return;
+      const step = card.offsetWidth + parseFloat(getComputedStyle(track).columnGap || '0');
+      setCurrent(Math.max(0, Math.min(chapters.length - 1, Math.round(track.scrollLeft / step))));
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
+    track.addEventListener('scroll', schedule, { passive: true });
+    return () => { cancelAnimationFrame(frame); track.removeEventListener('scroll', schedule); };
+  }, [chapters.length]);
+
+  const go = (index: number) => {
+    const card = trackRef.current?.children[index] as HTMLElement | undefined;
+    card?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+  };
+
+  return <div className="journey-carousel">
+    <div className="journey-carousel-head">
+      <span className="journey-carousel-eyebrow">The art of making</span>
+      <p className="journey-carousel-title">From a first idea to a jewel ready to be worn.</p>
+    </div>
+    <ol ref={trackRef} className="journey-carousel-track" aria-label="The making of a jewel, chapter by chapter">
+      {chapters.map((chapter, index) => <li key={chapter.id} className={`journey-card${index === current ? ' is-current' : ''}`} aria-label={`Chapter ${index + 1} of ${chapters.length}: ${chapter.title}`}>
+        <div className="journey-card-image">
+          <img src={chapter.image.src} srcSet={chapter.image.srcSet} sizes="86vw" width={chapter.image.width} height={chapter.image.height}
+            alt={chapter.image.alt} style={{ objectPosition: chapter.imagePosition }} loading="lazy" decoding="async" />
+        </div>
+        <span className="journey-card-number">{chapter.number} / {total}</span>
+        <h3>{chapter.title}</h3>
+        <p>{chapter.description}</p>
+        {chapter.ctaLabel && chapter.ctaHref && <Link href={chapter.ctaHref} className="text-link light">{chapter.ctaLabel}<span aria-hidden="true">↗</span></Link>}
+      </li>)}
+    </ol>
+    <div className="journey-carousel-controls">
+      <div className="journey-carousel-bar" aria-hidden="true"><span style={{ width: `${((current + 1) / chapters.length) * 100}%` }} /></div>
+      <span className="journey-carousel-count" aria-live="polite">{String(current + 1).padStart(2, '0')} / {total}</span>
+      <button type="button" onClick={() => go(current - 1)} disabled={current === 0} aria-label="Previous chapter"><ArrowLeft size={18} strokeWidth={1.3} /></button>
+      <button type="button" onClick={() => go(current + 1)} disabled={current === chapters.length - 1} aria-label="Next chapter"><ArrowRight size={18} strokeWidth={1.3} /></button>
+    </div>
+  </div>;
 }
