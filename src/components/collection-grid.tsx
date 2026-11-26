@@ -13,7 +13,7 @@ const sortLabels: Record<Sort, string> = { featured: 'Featured', az: 'Name, A–
 const sizes = '(min-width: 990px) calc((100vw - 160px) / 4), (min-width: 750px) calc((100vw - 120px) / 2), 50vw';
 
 function applyFilters(category: string, sort: Sort, lookbook: LookbookFilter) {
-  const list = collectionPieces.filter(p => (category === 'all' || p.category === category) && (lookbook === 'all' || p.collection === lookbook));
+  const list = collectionPieces.filter(p => (category === 'all' || p.categories.includes(category)) && (lookbook === 'all' || p.collection === lookbook));
   if (sort === 'az') return [...list].sort((a, b) => a.name.localeCompare(b.name));
   if (sort === 'za') return [...list].sort((a, b) => b.name.localeCompare(a.name));
   return list;
@@ -34,7 +34,8 @@ function PieceCard({ piece, eager }: { piece: CollectionPiece; eager: boolean })
             {piece.images.map((img, i) => (
               <img key={img.src} src={img.src} srcSet={img.srcSet} sizes={sizes} width={img.width} height={img.height}
                 alt={i === 0 ? piece.alt : ''} loading={eager && i === 0 ? 'eager' : 'lazy'} decoding="async"
-                className={img.width / img.height > 0.82 ? 'is-contained' : undefined} />
+                className={img.width / img.height > 0.82 ? 'is-contained' : undefined}
+                style={img.position ? { objectPosition: img.position } : undefined} />
             ))}
           </div>
         </Link>
@@ -103,7 +104,8 @@ function FilterDrawer({ open, onClose, sort, lookbook, onApply, category }: {
         </div>
         <div className="cl-drawer-body">
           {group('sort', `Sort by : ${sortLabels[draftSort]}`, Object.entries(sortLabels), draftSort, v => setDraftSort(v as Sort))}
-          {group('collection', 'Collection', [['all', 'All collections'], ...Object.entries(lookbookNames)], draftBook, v => setDraftBook(v as LookbookFilter))}
+          {/* Only worth offering once there is more than one collection. */}
+          {Object.keys(lookbookNames).length > 1 && group('collection', 'Collection', [['all', 'All collections'], ...Object.entries(lookbookNames)], draftBook, v => setDraftBook(v as LookbookFilter))}
         </div>
         <div className="cl-drawer-foot">
           <button className="cl-btn cl-btn-outline" onClick={() => { setDraftSort('featured'); setDraftBook('all'); }}>Clear all</button>
@@ -121,6 +123,20 @@ export function CollectionGrid({ category = 'all', title }: { category?: string;
   const [shown, setShown] = useState(PAGE_SIZE);
   const [drawer, setDrawer] = useState(false);
   const closeDrawer = useCallback(() => setDrawer(false), []);
+  const tabsRef = useRef<HTMLElement>(null);
+  // On narrow screens the tab row scrolls: bring the current tab into view.
+  useEffect(() => {
+    const row = tabsRef.current;
+    const tab = row?.querySelector<HTMLElement>('.is-active');
+    if (row && tab && row.scrollWidth > row.clientWidth) {
+      row.scrollLeft += tab.getBoundingClientRect().left - row.getBoundingClientRect().left - (row.clientWidth - tab.offsetWidth) / 2;
+    }
+  }, [category]);
+  // Product pages link here with ?collection=liaison to open the list already filtered.
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get('collection');
+    if (requested && requested in lookbookNames) setLookbook(requested as LookbookFilter);
+  }, []);
   const pieces = useMemo(() => applyFilters(category, sort, lookbook), [category, sort, lookbook]);
   const visible = pieces.slice(0, shown);
   const remaining = pieces.length - visible.length;
@@ -144,7 +160,7 @@ export function CollectionGrid({ category = 'all', title }: { category?: string;
       <h1 className="sr-only">{title}</h1>
       <div className="cl-toolbar">
         <div className="cl-toolbar-side cl-on-desktop">{viewToggle}</div>
-        <nav className="cl-tabs" aria-label="Collection categories">
+        <nav ref={tabsRef} className="cl-tabs" aria-label="Collection categories">
           {tabs.map(t => (
             <Link key={t.slug} href={t.href} className={t.slug === category ? 'is-active' : undefined} aria-current={t.slug === category ? 'page' : undefined}>{t.label}</Link>
           ))}
@@ -173,7 +189,7 @@ export function CollectionGrid({ category = 'all', title }: { category?: string;
               Load {Math.min(remaining, PAGE_SIZE)} more {Math.min(remaining, PAGE_SIZE) === 1 ? 'creation' : 'creations'}
             </button>
           )}
-          <p className="cl-note">Working names from the 2026 lookbooks. Official names, specifications and prices are shared on enquiry.</p>
+          <p className="cl-note">Piece names are working names until Kritarra confirms them. Liaison specifications are from the atelier's product sheet; prices are shared on enquiry.</p>
         </div>
       )}
 

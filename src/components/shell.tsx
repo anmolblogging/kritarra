@@ -7,7 +7,8 @@ import {AnimatePresence,motion,useReducedMotion} from 'motion/react';
 import {useStore} from './store';
 import {Asset} from './editorial';
 import {ProductCard} from './catalog';
-import {categories,products,instagram,contactEmail,priceLabel} from '@/lib/catalog';
+import {products,instagram,contactEmail,priceLabel} from '@/lib/catalog';
+import {collectionCategories} from '@/lib/collection';
 import {checkoutUrl,commerceConfig} from '@/lib/commerce';
 import {campaign} from '@/lib/imagery';
 import {LineReveal,sectionEase,useQuietMotion} from './section-motion';
@@ -88,7 +89,7 @@ export function Footer() {
    <Newsletter/>
   </div>
   <div className="footer-top">
-   <div><h3>Explore</h3><Link href="/collections/">All creations</Link><Link href="/lookbook/">Lookbook 2026</Link>{categories.map(c=><Link key={c} href={`/collections/${c.toLowerCase()}/`}>{c}</Link>)}</div>
+   <div><h3>Explore</h3><Link href="/collections/">All creations</Link><Link href="/lookbook/">Lookbook 2026</Link>{collectionCategories.map(c=><Link key={c.slug} href={`/collections/${c.slug}/`}>{c.label}</Link>)}</div>
    <div><h3>Kritarra</h3><Link href="/about/">About Kritarra</Link><Link href="/#our-craft">Our perspective</Link><Link href="/#journal">The journal</Link><Link href="/contact/">Private appointments</Link></div>
    <div><h3>Contact</h3><Link href="/contact/">Contact us</Link><Link href="/policies/care/">Jewellery care</Link><Link href="/policies/shipping/">Shipping & returns</Link><a href={`mailto:${contactEmail}`}>{contactEmail}</a></div>
   </div>

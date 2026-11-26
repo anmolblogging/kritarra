@@ -1,8 +1,7 @@
 import images from './lookbook-images.json';
 
 /*
- * Lookbook 2026: the two printed lookbooks (Liaison and The Emerald
- * Collection) as web spreads. Each spread is two pages, read left to right,
+ * Lookbook 2026: the printed Liaison lookbook as web spreads. Each spread is two pages, read left to right,
  * following the page grammar of the printed books.
  */
 
@@ -89,80 +88,4 @@ const liaison: LookbookCollection = {
   ],
 };
 
-const emeraldChapters = {
-  necklaces: { id: 'emerald-necklaces', en: 'Necklaces', hi: 'कंठहार' },
-  earrings: { id: 'emerald-earrings', en: 'Earrings', hi: 'झुमके' },
-  bracelets: { id: 'emerald-bracelets', en: 'Bracelets', hi: 'कंगन' },
-  rings: { id: 'emerald-rings', en: 'Rings', hi: 'अंगूठी' },
-  maangTikka: { id: 'emerald-maang-tikka', en: 'Maang tikka', hi: 'मांग टीका' },
-} as const;
-
-const emerald: LookbookCollection = {
-  id: 'emerald',
-  name: 'The Emerald Collection',
-  tagline: 'A collection created around the magnetism of exceptional stones.',
-  intro: [
-    'The collection explores the tension between precision and sensuality through bold compositions of emeralds, rubies, and diamonds.',
-    'Monumental emeralds anchor each piece with depth and intensity, surrounded by emerald-cut, baguette, square, and brilliant-cut diamonds arranged in sharp, luminous structures.',
-  ],
-  ground: 'grey',
-  chapters: Object.values(emeraldChapters),
-  spreads: [
-    [{ kind: 'cover', image: image('emerald-cover', 'Emerald and diamond jhumka earrings with pearl drops') }, { kind: 'title' }],
-    [{ kind: 'statement' }, { kind: 'still', piece: piece('emerald-statement', 'Maang tikka', 'Emerald and diamond maang tikka on a gold chain') }],
-    [
-      { kind: 'photo', chapter: emeraldChapters.necklaces, image: image('emerald-necklaces', 'An emerald, diamond and pearl necklace worn with black tulle'), position: '50% 30%' },
-      { kind: 'still', piece: piece('emerald-pearl-necklace', 'Necklace', 'Emerald and diamond necklace with pearl drops') },
-    ],
-    [
-      { kind: 'photo', chapter: emeraldChapters.earrings, image: image('emerald-earrings', 'A ruby earring framed in emeralds and pearls'), position: '50% 30%' },
-      { kind: 'pair', pieces: [piece('emerald-bird-earrings', 'Earrings', 'Enamelled gold bird earrings'), piece('emerald-ruby-studs', 'Earrings', 'Ruby earrings framed in pearls and emeralds')] },
-    ],
-    [
-      { kind: 'photo', image: image('emerald-veil-earring', 'A long emerald, diamond and pearl earring worn with a veil'), position: '50% 30%' },
-      { kind: 'still', piece: piece('emerald-long-jhumkas', 'Earrings', 'Long emerald and diamond earrings with pearl jhumkas') },
-    ],
-    [
-      { kind: 'still', piece: piece('emerald-jhumkas', 'Earrings', 'Emerald and diamond jhumka earrings with pearl drops') },
-      { kind: 'photo', image: image('emerald-jhumka-model', 'Emerald and diamond jhumkas framing the face'), position: '50% 30%' },
-    ],
-    [
-      { kind: 'pair', pieces: [piece('emerald-frame-earrings', 'Earrings', 'Emerald-cut emeralds in diamond frames'), piece('emerald-pear-drops', 'Earrings', 'Pear-shaped emerald drop earrings')] },
-      { kind: 'still', piece: piece('emerald-line-drops', 'Earrings', 'Long emerald and diamond line earrings') },
-    ],
-    [
-      { kind: 'photo', chapter: emeraldChapters.bracelets, image: image('emerald-bracelets', 'An emerald and diamond hand bracelet worn across the wrist'), position: '50% 40%' },
-      { kind: 'still', piece: piece('emerald-wrap-bracelet', 'Bracelet', 'Emerald and diamond wrap bracelet') },
-    ],
-    [
-      { kind: 'photo', image: image('emerald-bangle-model', 'Ruby bangles crowned with an emerald flower'), position: '50% 40%' },
-      { kind: 'still', piece: piece('emerald-flower-bangle', 'Bracelet', 'Ruby bangle with an emerald flower') },
-    ],
-    [
-      { kind: 'still', piece: piece('emerald-ruby-cuff', 'Bracelet', 'Ruby and diamond floral cuff in gold') },
-      { kind: 'photo', image: image('emerald-cuff-model', 'A ruby cuff and emerald ring worn together'), position: '50% 35%' },
-    ],
-    [
-      { kind: 'photo', chapter: emeraldChapters.rings, image: image('emerald-rings', 'Ruby and emerald cluster rings on the hand'), position: '50% 40%' },
-      { kind: 'still', piece: piece('emerald-twin-ring', 'Ring', 'Ruby and emerald two-finger ring') },
-    ],
-    [
-      { kind: 'pair', pieces: [piece('emerald-cut-ring', 'Ring', 'Emerald-cut emerald ring with diamonds'), piece('emerald-pave-ring', 'Ring', 'Monumental emerald on a pavé diamond band')] },
-      { kind: 'photo', image: image('emerald-ring-model', 'An emerald ring and earring worn together'), position: '50% 30%' },
-    ],
-    [
-      { kind: 'photo', chapter: emeraldChapters.maangTikka, image: image('emerald-maang-tikka', 'A diamond maang tikka beneath a sheer veil'), position: '50% 25%' },
-      { kind: 'still', piece: piece('emerald-pendant-tikka', 'Maang tikka', 'Emerald and diamond maang tikka') },
-    ],
-    [
-      { kind: 'still', piece: piece('emerald-chain-tikka', 'Maang tikka', 'Emerald and diamond maang tikka on a gold chain') },
-      { kind: 'photo', image: image('emerald-tikka-model', 'An emerald maang tikka worn at the parting'), position: '50% 25%' },
-    ],
-    [
-      { kind: 'photo', image: image('emerald-shell-model', 'Sculpted gold shell ornaments worn in the hair'), position: '50% 30%' },
-      { kind: 'still', piece: piece('emerald-shell-ornaments', 'Hair ornament', 'Sculpted gold shell hair ornaments') },
-    ],
-  ],
-};
-
-export const lookbookCollections: readonly LookbookCollection[] = [liaison, emerald];
+export const lookbookCollections: readonly LookbookCollection[] = [liaison];

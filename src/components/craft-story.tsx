@@ -17,7 +17,7 @@ export function CraftStory() {
     {/* A single line from the Kritarra lookbook, set over the photograph. */}
     <motion.figure className="craft-quote" initial={false} whileInView={reduce ? {} : { opacity: [0, 1], y: [18, 0] }} viewport={{ once: true, amount: .4 }} transition={{ duration: 1, ease: sectionEase }}>
       <blockquote>
-        <p id="details-heading">The rarest luxury today is not recognition, but individuality.</p>
+        <p id="details-heading">&ldquo;The rarest luxury today is not recognition, but individuality.&rdquo;</p>
       </blockquote>
       <figcaption><KritarraLockup className="craft-quote-signature" title="Kritarra" /></figcaption>
     </motion.figure>
