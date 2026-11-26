@@ -6,7 +6,7 @@ import './lookbook.css';
 
 export const metadata: Metadata = {
   title: 'Lookbook 2026',
-  description: 'Liaison and The Emerald Collection: the Kritarra 2026 lookbooks.',
+  description: 'Liaison: the Kritarra 2026 lookbook.',
 };
 
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -92,9 +92,9 @@ export default function Lookbook() {
   return <main id="main" className="lookbook">
     <header className="lb-intro">
       <span className="eyebrow">Lookbook 2026</span>
-      <h1>Two collections.</h1>
-      <p>Couture gold that moves with silk, and exceptional stones set in sharp, luminous structures. Each creation is made in extremely limited numbers, often no more than two or three pieces worldwide.</p>
-      <nav className="lb-index" aria-label="Collections">
+      <h1>Liaison.</h1>
+      <p>A collection shaped by movement, softness, and intimacy: sculpted gold set with diamonds, designed to move through silk, wrap around the wrist, gather at the neck, or settle into the hair.</p>
+      {lookbookCollections.length > 1 && <nav className="lb-index" aria-label="Collections">
         {lookbookCollections.map((collection, i) => {
           const cover = collection.spreads[0][0];
           return <a key={collection.id} href={`#${collection.id}`} className="lb-index-card">
@@ -103,7 +103,7 @@ export default function Lookbook() {
             <span className="lb-index-name">{collection.name}</span>
           </a>;
         })}
-      </nav>
+      </nav>}
     </header>
     {lookbookCollections.map((collection, i) => <Collection key={collection.id} collection={collection} index={i} />)}
     <section className="lb-close" aria-label="Private appointments">

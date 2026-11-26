@@ -1,0 +1,182 @@
+{
+ "enamel-bird-earrings-still": {
+  "src": "/images/liaison/enamel-bird-earrings-still-1200.webp",
+  "srcSet": "/images/liaison/enamel-bird-earrings-still-720.webp 720w, /images/liaison/enamel-bird-earrings-still-1200.webp 1200w, /images/liaison/enamel-bird-earrings-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "enamel-bird-earrings-worn": {
+  "src": "/images/liaison/enamel-bird-earrings-worn-1200.webp",
+  "srcSet": "/images/liaison/enamel-bird-earrings-worn-720.webp 720w, /images/liaison/enamel-bird-earrings-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "openwork-link-cuff-still": {
+  "src": "/images/liaison/openwork-link-cuff-still-1200.webp",
+  "srcSet": "/images/liaison/openwork-link-cuff-still-720.webp 720w, /images/liaison/openwork-link-cuff-still-1200.webp 1200w, /images/liaison/openwork-link-cuff-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "openwork-link-cuff-worn": {
+  "src": "/images/liaison/openwork-link-cuff-worn-1200.webp",
+  "srcSet": "/images/liaison/openwork-link-cuff-worn-720.webp 720w, /images/liaison/openwork-link-cuff-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "buckle-cuff-still": {
+  "src": "/images/liaison/buckle-cuff-still-1200.webp",
+  "srcSet": "/images/liaison/buckle-cuff-still-720.webp 720w, /images/liaison/buckle-cuff-still-1200.webp 1200w, /images/liaison/buckle-cuff-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "buckle-cuff-worn": {
+  "src": "/images/liaison/buckle-cuff-worn-1200.webp",
+  "srcSet": "/images/liaison/buckle-cuff-worn-720.webp 720w, /images/liaison/buckle-cuff-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "sculpted-cuff-still": {
+  "src": "/images/liaison/sculpted-cuff-still-1200.webp",
+  "srcSet": "/images/liaison/sculpted-cuff-still-720.webp 720w, /images/liaison/sculpted-cuff-still-1200.webp 1200w, /images/liaison/sculpted-cuff-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "sculpted-cuff-worn": {
+  "src": "/images/liaison/sculpted-cuff-worn-1200.webp",
+  "srcSet": "/images/liaison/sculpted-cuff-worn-720.webp 720w, /images/liaison/sculpted-cuff-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "winged-brooch-still": {
+  "src": "/images/liaison/winged-brooch-still-1200.webp",
+  "srcSet": "/images/liaison/winged-brooch-still-720.webp 720w, /images/liaison/winged-brooch-still-1200.webp 1200w, /images/liaison/winged-brooch-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "winged-brooch-worn": {
+  "src": "/images/liaison/winged-brooch-worn-1200.webp",
+  "srcSet": "/images/liaison/winged-brooch-worn-720.webp 720w, /images/liaison/winged-brooch-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "leaf-headband-still": {
+  "src": "/images/liaison/leaf-headband-still-1200.webp",
+  "srcSet": "/images/liaison/leaf-headband-still-720.webp 720w, /images/liaison/leaf-headband-still-1200.webp 1200w, /images/liaison/leaf-headband-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "leaf-headband-worn": {
+  "src": "/images/liaison/leaf-headband-worn-1200.webp",
+  "srcSet": "/images/liaison/leaf-headband-worn-720.webp 720w, /images/liaison/leaf-headband-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "floral-square-bracelet-still": {
+  "src": "/images/liaison/floral-square-bracelet-still-1200.webp",
+  "srcSet": "/images/liaison/floral-square-bracelet-still-720.webp 720w, /images/liaison/floral-square-bracelet-still-1200.webp 1200w, /images/liaison/floral-square-bracelet-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "floral-square-bracelet-worn": {
+  "src": "/images/liaison/floral-square-bracelet-worn-1200.webp",
+  "srcSet": "/images/liaison/floral-square-bracelet-worn-720.webp 720w, /images/liaison/floral-square-bracelet-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "floral-square-bracelet-worn2": {
+  "src": "/images/liaison/floral-square-bracelet-worn2-1200.webp",
+  "srcSet": "/images/liaison/floral-square-bracelet-worn2-720.webp 720w, /images/liaison/floral-square-bracelet-worn2-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "ladder-necklace-still": {
+  "src": "/images/liaison/ladder-necklace-still-1200.webp",
+  "srcSet": "/images/liaison/ladder-necklace-still-720.webp 720w, /images/liaison/ladder-necklace-still-1200.webp 1200w, /images/liaison/ladder-necklace-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "ladder-necklace-worn": {
+  "src": "/images/liaison/ladder-necklace-worn-1200.webp",
+  "srcSet": "/images/liaison/ladder-necklace-worn-720.webp 720w, /images/liaison/ladder-necklace-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "oval-link-necklace-still": {
+  "src": "/images/liaison/oval-link-necklace-still-1200.webp",
+  "srcSet": "/images/liaison/oval-link-necklace-still-720.webp 720w, /images/liaison/oval-link-necklace-still-1200.webp 1200w, /images/liaison/oval-link-necklace-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "oval-link-necklace-worn": {
+  "src": "/images/liaison/oval-link-necklace-worn-1200.webp",
+  "srcSet": "/images/liaison/oval-link-necklace-worn-720.webp 720w, /images/liaison/oval-link-necklace-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "floral-link-necklace-still": {
+  "src": "/images/liaison/floral-link-necklace-still-1200.webp",
+  "srcSet": "/images/liaison/floral-link-necklace-still-720.webp 720w, /images/liaison/floral-link-necklace-still-1200.webp 1200w, /images/liaison/floral-link-necklace-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2698
+ },
+ "floral-link-necklace-worn": {
+  "src": "/images/liaison/floral-link-necklace-worn-1200.webp",
+  "srcSet": "/images/liaison/floral-link-necklace-worn-720.webp 720w, /images/liaison/floral-link-necklace-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "scroll-necklace-still": {
+  "src": "/images/liaison/scroll-necklace-still-1200.webp",
+  "srcSet": "/images/liaison/scroll-necklace-still-720.webp 720w, /images/liaison/scroll-necklace-still-1200.webp 1200w, /images/liaison/scroll-necklace-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "scroll-necklace-worn": {
+  "src": "/images/liaison/scroll-necklace-worn-1200.webp",
+  "srcSet": "/images/liaison/scroll-necklace-worn-720.webp 720w, /images/liaison/scroll-necklace-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "three-strand-necklace-still": {
+  "src": "/images/liaison/three-strand-necklace-still-1200.webp",
+  "srcSet": "/images/liaison/three-strand-necklace-still-720.webp 720w, /images/liaison/three-strand-necklace-still-1200.webp 1200w, /images/liaison/three-strand-necklace-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "three-strand-necklace-worn": {
+  "src": "/images/liaison/three-strand-necklace-worn-1200.webp",
+  "srcSet": "/images/liaison/three-strand-necklace-worn-720.webp 720w, /images/liaison/three-strand-necklace-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "pierced-cuff-still": {
+  "src": "/images/liaison/pierced-cuff-still-1200.webp",
+  "srcSet": "/images/liaison/pierced-cuff-still-720.webp 720w, /images/liaison/pierced-cuff-still-1200.webp 1200w, /images/liaison/pierced-cuff-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "pierced-cuff-worn": {
+  "src": "/images/liaison/pierced-cuff-worn-1200.webp",
+  "srcSet": "/images/liaison/pierced-cuff-worn-720.webp 720w, /images/liaison/pierced-cuff-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ },
+ "wave-necklace-still": {
+  "src": "/images/liaison/wave-necklace-still-1200.webp",
+  "srcSet": "/images/liaison/wave-necklace-still-720.webp 720w, /images/liaison/wave-necklace-still-1200.webp 1200w, /images/liaison/wave-necklace-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "shell-brooches-still": {
+  "src": "/images/liaison/shell-brooches-still-1200.webp",
+  "srcSet": "/images/liaison/shell-brooches-still-720.webp 720w, /images/liaison/shell-brooches-still-1200.webp 1200w, /images/liaison/shell-brooches-still-1800.webp 1800w",
+  "width": 1800,
+  "height": 2400
+ },
+ "shell-brooches-worn": {
+  "src": "/images/liaison/shell-brooches-worn-1200.webp",
+  "srcSet": "/images/liaison/shell-brooches-worn-720.webp 720w, /images/liaison/shell-brooches-worn-1200.webp 1200w",
+  "width": 1200,
+  "height": 1800
+ }
+}

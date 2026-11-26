@@ -97,7 +97,9 @@ export function ProductShowcase({ product, showcase }: { product: Product; showc
     return () => rail.removeEventListener('scroll', onScroll);
   }, []);
 
+  const sized = showcase.sizes.length > 0;
   const add = () => {
+    if (!sized) { addToBag(product.id, product.variants[0].id); return; }
     if (!size) { setSizeError(true); return; }
     addToBag(product.id, size === 'confirm' ? 'size-to-confirm' : `size-${size}`);
   };
@@ -127,7 +129,7 @@ export function ProductShowcase({ product, showcase }: { product: Product; showc
             <p>{showcase.description[0]}</p>
           </div>
 
-          <div className="pdp-size">
+          {sized && <><div className="pdp-size">
             <label htmlFor="pdp-size-select">Ring size</label>
             <div className="pdp-select">
               <select id="pdp-size-select" value={size ?? ''} onChange={event => { setSize(event.target.value || null); setSizeError(false); }} aria-invalid={sizeError}>
@@ -138,7 +140,7 @@ export function ProductShowcase({ product, showcase }: { product: Product; showc
             </div>
             <button className="pdp-text-link" onClick={() => setGuide(true)}>Size guide</button>
           </div>
-          {sizeError && <p className="pdp-size-error" role="alert">Please choose a ring size, or select Not sure of my size.</p>}
+          {sizeError && <p className="pdp-size-error" role="alert">Please choose a ring size, or select Not sure of my size.</p>}</>}
 
           <button className="pdp-cta" onClick={add}>
             <span>{priceLabel(product.price)}</span>
@@ -165,7 +167,7 @@ export function ProductShowcase({ product, showcase }: { product: Product; showc
               <Link href="/policies/care/" className="pdp-text-link">Jewellery care <ArrowUpRight size={14} /></Link>
             </Accordion>
           </div>
-          <p className="pdp-preview-note">{showcase.highlights.join(' · ')}. Design preview: final specifications and pricing will follow.</p>
+          <p className="pdp-preview-note">{showcase.note}</p>
         </div>
       </div>
     </section>
@@ -183,7 +185,7 @@ export function ProductShowcase({ product, showcase }: { product: Product; showc
     <section className="pdp-related" aria-labelledby="pdp-related-heading">
       <div className="pdp-related-head">
         <h2 id="pdp-related-heading">You may also like</h2>
-        <Link href="/collections/rings/" className="pdp-text-link">View all rings <ArrowUpRight size={14} /></Link>
+        <Link href={showcase.relatedLink.href} className="pdp-text-link">{showcase.relatedLink.label} <ArrowUpRight size={14} /></Link>
       </div>
       <div className="pdp-related-grid">
         {showcase.related.map(item => <Link key={item.name} href={item.href} className="pdp-related-card">
